@@ -17,7 +17,7 @@ body{
 
 	background-attachment: fixed;
 	font-family: Helvetica, Arial, sans-serif;
-
+	overflow-x: hidden;
 }
 
 
@@ -49,11 +49,12 @@ nav.navbar-transparent{
 	background: white;
 	margin: 16px 10px;
 }
-.navbar-inverse .navbar-nav>li>a {
+.navbar-inverse .navbar-nav>li>a, #footer .nav a{
 	color: #fff;
 }
-.navbar-inverse .navbar-nav>li>a:hover {
+.navbar-inverse .navbar-nav>li>a:hover, #footer .nav a:hover {
 	color: #9bf0e1;
+	background: none;
 }
 
 /* ---- Cover-image ---- */
@@ -71,11 +72,119 @@ nav.navbar-transparent{
 	display: table-cell;
 	vertical-align: middle;
 }
+
+/* ---- Buttons---- */
+
+.btn-custom{
+	color: #fff;
+	border-radius: 500px;
+	-webkit-border-radius: 500px;
+	-moz-border-radius: 500px;
+	padding: 10px 35px;
+	margin-right: 20px;
+	text-transform: uppercase;
+	transition: background 0.4s, color 0.4s;
+}
+
+.btn-purple{
+	background: #7c25f8;
+}
+
+.btn-purple:hover{
+	color: #fff;
+	background-color: #6807e3;
+}
+.btn-white{
+	border: 2PX solid #fff;
+}
+.btn-white:hover{
+	background-color: #fff;
+	color: #000;
+}
+
+
+/* ---- Service Section---- */
+
+#services{
+	background: #fff;
+	padding-top: 20px;
+	padding-bottom: 20px;
+
+}
+
+.albuns{
+	padding: 10px 0px 10px 0px;
+}
+
+
+/* ---- resources ---- */
+
+#resources{
+	padding-top: 20px;
+	padding-bottom: 20px;
+	color: #fff;
+
+}
+
+.rotate{
+	transform: rotate(30deg);
+	-ms-transform: rotate(30deg); /* IE 9 */
+	-webkit-transform: rotate(30deg); /* chrome, Sfari, Opera */
+	padding-left: 80px;
+}
+
+
+/* ---- Footer ---- */
+
+footer{
+	background: #000;
+	padding: 50px 0px 20px 0px;
+	position: relative;
+}
+
+.item-social-network{
+	float: right;
+}
+
+
+
 /* ==================================== typhography  ====================================*/
 
 h1{
 	font-size: 100px;
 	font-weight: 900;
 	letter-spacing: -10px;
+	margin-bottom: 50px;
 
+}
+
+h2{
+	font-size: 50px;
+	font-weight: 700;
+	letter-spacing: -0.64px;
+}
+
+h3{
+	font-size: 35px;
+	font-weight: 700;
+	letter-spacing: -0.64px;
+}
+
+h4{
+	font-size: 14px;
+
+}
+
+#footer{
+	color: #919496;
+	font-size: 12px;
+	text-transform: uppercase;
+}
+
+#services h2, #services h3{
+	color: #7c25f8;
+}
+
+#resources h3{
+	color: #9bf0e1;
 }
